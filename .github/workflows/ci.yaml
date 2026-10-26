@@ -61,9 +61,9 @@ jobs:
 
       # 4. Install Trivy
       - name: Install Trivy
-        uses: aquasecurity/setup-trivy@v0.2.3
+        uses: aquasecurity/setup-trivy@v0.2.6
         with:
-          version: latest
+          version: v0.69.4
 
       # 5. Push to ECR only on main branch push/manual run
       - name: Configure AWS credentials
